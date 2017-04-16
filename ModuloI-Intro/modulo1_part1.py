@@ -205,7 +205,42 @@ print("o melhor clube é", melhor_clube)
 
 # --------------- Dicionarios --------------------
 
-#nao tem ordem, so se pode aceder pela chave 
+#Agora vamos ver o que são dicionarios:
+idades = {'Rute':20, 'Hugo':19, 'Coelho':24, 'Calil':28}
+
+# Os dicionarios sao caracterizados pelo caracter {}. Cada elemento do dicionario, separados por virgulas, tem 2 componentes. 'Rute':19 é um elemento onde 'Rute' é a chave e 19 é o valor.
+#Enquanto que nas listas e nos tuplos para aceder aos elementos acedia-se pela sua posição, nos dicionarios só se pode consultar pela chave porque os dicionarios não têm ordem!!
+print(idades)
+print(idades)
+print(idades)
+print(idades) # Como podem ver as ordens que apareceram nos prints nao foram iguais
+
+# Entao se quisessemos a idade da Rute estaria errado fazer idades[0]. Para a conseguir faziamos 
+print(idades['Rute']) # que nos devolve 20
+
+# Outras operacões que podemos realizar com os dicionarios são:
+print(len(idades)) # diz quantos items tem o dict
+del idades['Calil'] 
+print(idades) # podemos eliminar o elemento associado a uma chave
+
+# Se quiseremos adicionar o elemento de volta fazemos
+idades['Calil'] = 28
+print(idades)
+
+# Existem ainda alguns metodos dos dicionarios
+## metodos que nao modificam os dicionarios
+#idades.copy() Devolve uma cópia do dict
+#idades.items() Devolve um iterável de pares (chave,valor) de dict
+#idades.keys() Devolve um iterável chaves de dict
+#idades.values() Devolve um iterável de valores de dict
+#idades.get(key,default=None)) Devolve o valor caso exista senão devolve default
+## metodos que modificam os dicionarios
+#idades.clear() Retira todos os elementos de dict
+#idades.pop(key,default=None) Retira e devolve o elemento de key
+#idades.popitem() Retira aleatoriamente e devolve um par
+#idades.update(dict2) Adiciona os pares (chave,valor) de dict2 a dict
+#idades.setdefault(key,default=None)) Como get mas actualiza o par com key:default
+
 
 
 
